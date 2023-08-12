@@ -4,9 +4,9 @@ require('dotenv').config();
 const app=express()
 const taskRoutes=require('./routes/taskRoute')
 const cors=require("cors")
-// app.get("/",(req,res)=>{
-//     res.send("Hello");
-// });
+app.get("/",(req,res)=>{
+    res.send("Hello");
+});
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
     app.listen(process.env.PORT,()=>{
