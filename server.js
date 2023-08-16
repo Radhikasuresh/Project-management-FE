@@ -5,7 +5,7 @@ const app=express()
 const taskRoutes=require('./routes/taskRoute')
 const cors=require("cors")
 app.get("/",(req,res)=>{
-    res.send("Hello");
+    res.send("Hello Welcome to Project Management site....");
 });
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
